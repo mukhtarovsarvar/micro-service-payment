@@ -22,14 +22,15 @@ public class CardController {
 
         CardUzCardDTO dto = new CardUzCardDTO();
         dto.setClientId("8a8a81bc81132a510181132da9f80001");
-        CardUzCardDTO uzCardDTO = cardService.create(dto);
-        System.out.println(uzCardDTO);
 
-        System.out.println(dto);
+        CardUzCardDTO uzCardDTO = cardService.create(dto);
 
 
         return ResponseEntity.ok(uzCardDTO);
     }
+
+
+
     @GetMapping("")
     public ResponseEntity<CardUzCardDTO[]> getAll(){
         return ResponseEntity.ok(cardService.getAll());
