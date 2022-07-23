@@ -35,7 +35,6 @@ public class CardService {
 
         CardUzCardDTO body = restTemplate.exchange(createCardUrl, HttpMethod.POST, entity, CardUzCardDTO.class).getBody();
 
-
         return body;
 
 
@@ -44,14 +43,6 @@ public class CardService {
     public CardUzCardDTO[] getAll() {
 
         String createCardUrl = uzCardUrl + "uzcard/api/v1/card/all";
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-
-        MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
-        map.add("id", "1");
-
-        HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
 
         CardUzCardDTO[] object = restTemplate.getForObject(createCardUrl,  CardUzCardDTO[].class);
 

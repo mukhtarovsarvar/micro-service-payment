@@ -5,7 +5,6 @@ import com.click.service.CardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,5 +34,7 @@ public class CardController {
     public ResponseEntity<CardUzCardDTO[]> getAll(){
         return ResponseEntity.ok(cardService.getAll());
     }
+
+
 
 }

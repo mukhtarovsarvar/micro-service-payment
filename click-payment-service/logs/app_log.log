@@ -1,0 +1,1185 @@
+23 июл. 2022 - 15:44:29.121 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 17548 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 15:44:29.131 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 15:44:30.769 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 15:44:30.838 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 15:44:31.226 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=9e350f2e-14b9-38bb-b4c6-e966b57b716a
+23 июл. 2022 - 15:44:31.681 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 15:44:31.694 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 15:44:31.695 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 15:44:31.858 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 15:44:31.858 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2648 ms
+23 июл. 2022 - 15:44:32.023 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 15:44:32.076 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 15:44:32.255 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 15:44:32.378 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 15:44:32.580 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 15:44:32.606 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 15:44:32.736 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 15:44:33.255 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 15:44:33.262 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 15:44:33.616 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes\com\click\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authService' defined in file [C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes\com\click\service\AuthService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+23 июл. 2022 - 15:44:33.617 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 15:44:33.620 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 15:44:33.649 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 15:44:33.651 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+23 июл. 2022 - 15:44:33.666 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23 июл. 2022 - 15:44:33.686 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.click.service.AuthService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+23 июл. 2022 - 15:45:23.895 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 18820 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 15:45:23.898 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 15:45:24.783 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 15:45:24.848 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 15:45:25.116 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=9e350f2e-14b9-38bb-b4c6-e966b57b716a
+23 июл. 2022 - 15:45:25.469 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 15:45:25.476 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 15:45:25.477 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 15:45:25.632 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 15:45:25.632 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1691 ms
+23 июл. 2022 - 15:45:25.766 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 15:45:25.814 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 15:45:25.957 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 15:45:26.047 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 15:45:26.311 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 15:45:26.338 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 15:45:26.450 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 15:45:26.920 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 15:45:26.933 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 15:45:28.158 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 15:45:28.402 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 15:45:28.459 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 15:45:28.464 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 15:45:28.500 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 15:45:28.500 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 15:45:28.500 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 15:45:28.500 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 15:45:28.500 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 15:45:28.501 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 15:45:28.501 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 15:45:28.834 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 15:45:28.841 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 15:45:28.848 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 15:45:28.864 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658573128863 with initial instances count: 2
+23 июл. 2022 - 15:45:28.866 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 15:45:28.867 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658573128867, current=UP, previous=STARTING]
+23 июл. 2022 - 15:45:28.868 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/DESKTOP-AVEJT3V:CLICK:8083: registering service...
+23 июл. 2022 - 15:45:28.889 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 15:45:28.890 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 15:45:28.907 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/DESKTOP-AVEJT3V:CLICK:8083 - registration status: 204
+23 июл. 2022 - 15:45:29.194 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 5.864 seconds (JVM running for 6.758)
+23 июл. 2022 - 15:50:28.510 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 15:50:54.518 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 15:50:54.519 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658573454519, current=DOWN, previous=UP]
+23 июл. 2022 - 15:50:54.520 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/DESKTOP-AVEJT3V:CLICK:8083: registering service...
+23 июл. 2022 - 15:50:54.534 - c.n.d.s.t.d.RedirectingEurekaHttpClient -  INFO  - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CLICK": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CLICK": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 34 more
+
+23 июл. 2022 - 15:50:54.534 - c.n.d.s.t.d.RetryableEurekaHttpClient -  WARN  - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CLICK": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+23 июл. 2022 - 15:50:54.547 - c.n.d.s.t.d.RedirectingEurekaHttpClient -  INFO  - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CLICK": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CLICK": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+23 июл. 2022 - 15:50:54.548 - c.n.d.s.t.d.RetryableEurekaHttpClient -  WARN  - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CLICK": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+23 июл. 2022 - 15:50:54.551 - c.netflix.discovery.DiscoveryClient -  WARN  - DiscoveryClient_CLICK/DESKTOP-AVEJT3V:CLICK:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 15:50:54.551 - c.n.discovery.InstanceInfoReplicator -  WARN  - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 15:50:54.552 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 15:50:54.554 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 15:50:54.558 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 15:50:54.559 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
+23 июл. 2022 - 16:43:28.532 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 15808 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 16:43:28.538 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 16:43:30.275 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 16:43:30.385 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 16:43:30.955 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=9e350f2e-14b9-38bb-b4c6-e966b57b716a
+23 июл. 2022 - 16:43:31.377 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 16:43:31.388 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 16:43:31.388 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 16:43:31.543 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 16:43:31.544 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2893 ms
+23 июл. 2022 - 16:43:31.681 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 16:43:31.731 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 16:43:31.871 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 16:43:31.973 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 16:43:32.164 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 16:43:32.192 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 16:43:32.323 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 16:43:32.794 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 16:43:32.801 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 16:43:33.878 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 16:43:34.146 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 16:43:34.200 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 16:43:34.204 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 16:43:34.234 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 16:43:34.234 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 16:43:34.234 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 16:43:34.234 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 16:43:34.234 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 16:43:34.234 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 16:43:34.235 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 16:43:34.577 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 16:43:34.584 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 16:43:34.591 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 16:43:34.607 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658576614605 with initial instances count: 2
+23 июл. 2022 - 16:43:34.608 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 16:43:34.609 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658576614609, current=UP, previous=STARTING]
+23 июл. 2022 - 16:43:34.611 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 16:43:34.639 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 16:43:34.640 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 16:43:34.652 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 16:43:34.948 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 7.451 seconds (JVM running for 8.758)
+23 июл. 2022 - 16:48:34.249 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 16:49:00.106 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23 июл. 2022 - 16:49:00.107 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+23 июл. 2022 - 16:49:00.108 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+23 июл. 2022 - 16:49:00.141 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov, password=12345678, phone=+998330030528)
+23 июл. 2022 - 16:49:00.403 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$MethodNotAllowed: 405 : "{"timestamp":"2022-07-23T11:49:00.374+00:00","status":405,"error":"Method Not Allowed","path":"/uzcard/api/v1/client/create"}"] with root cause
+org.springframework.web.client.HttpClientErrorException$MethodNotAllowed: 405 : "{"timestamp":"2022-07-23T11:49:00.374+00:00","status":405,"error":"Method Not Allowed","path":"/uzcard/api/v1/client/create"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:117)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:57)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 16:49:44.820 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 16:49:44.821 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658576984821, current=DOWN, previous=UP]
+23 июл. 2022 - 16:49:44.821 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 16:49:44.828 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 16:49:44.853 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 16:49:44.857 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 16:49:44.865 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 16:49:44.866 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
+23 июл. 2022 - 16:49:53.511 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 18780 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 16:49:53.515 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 16:49:54.446 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 16:49:54.518 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 16:49:54.792 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=9e350f2e-14b9-38bb-b4c6-e966b57b716a
+23 июл. 2022 - 16:49:55.166 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 16:49:55.174 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 16:49:55.174 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 16:49:55.363 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 16:49:55.364 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1789 ms
+23 июл. 2022 - 16:49:55.827 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 16:49:55.882 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 16:49:56.048 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 16:49:56.157 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 16:49:56.409 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 16:49:56.437 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 16:49:56.540 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 16:49:57.008 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 16:49:57.016 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 16:49:57.956 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 16:49:58.192 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 16:49:58.243 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 16:49:58.247 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 16:49:58.275 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 16:49:58.276 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 16:49:58.276 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 16:49:58.276 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 16:49:58.276 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 16:49:58.277 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 16:49:58.277 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 16:49:58.600 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 16:49:58.607 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 16:49:58.615 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 16:49:58.630 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658576998629 with initial instances count: 3
+23 июл. 2022 - 16:49:58.632 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 16:49:58.633 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658576998633, current=UP, previous=STARTING]
+23 июл. 2022 - 16:49:58.634 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 16:49:58.655 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 16:49:58.655 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 16:49:58.673 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 16:49:58.979 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 6.903 seconds (JVM running for 8.102)
+23 июл. 2022 - 16:50:01.757 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23 июл. 2022 - 16:50:01.757 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+23 июл. 2022 - 16:50:01.759 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 2 ms
+23 июл. 2022 - 16:50:01.789 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov, password=12345678, phone=+998330030528)
+23 июл. 2022 - 16:50:02.055 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "item all ready exists!"] with root cause
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "item all ready exists!"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:57)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 16:50:16.671 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov, password=12345678, phone=+998330030522)
+23 июл. 2022 - 16:54:58.295 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 16:59:58.305 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:03:52.285 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 17:03:52.286 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658577832286, current=DOWN, previous=UP]
+23 июл. 2022 - 17:03:52.287 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:03:52.295 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:03:52.350 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:03:52.356 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 17:03:52.364 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 17:03:52.366 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
+23 июл. 2022 - 17:19:15.091 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 856 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 17:19:15.094 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 17:19:16.080 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 17:19:16.167 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 17:19:16.456 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=32c048d5-a57e-3e05-b0da-e418f8568e8f
+23 июл. 2022 - 17:19:16.867 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 17:19:16.875 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 17:19:16.876 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 17:19:17.073 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 17:19:17.074 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1934 ms
+23 июл. 2022 - 17:19:17.263 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 17:19:17.336 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 17:19:17.531 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 17:19:17.716 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 17:19:17.959 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 17:19:17.986 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 17:19:18.172 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 17:19:18.901 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 17:19:18.908 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:19:20.038 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 17:19:20.293 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 17:19:20.342 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 17:19:20.346 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:19:20.380 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 17:19:20.381 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 17:19:20.381 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 17:19:20.381 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 17:19:20.381 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 17:19:20.381 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 17:19:20.381 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 17:19:20.854 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 17:19:20.864 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 17:19:20.875 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 17:19:20.891 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658578760889 with initial instances count: 2
+23 июл. 2022 - 17:19:20.893 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 17:19:20.894 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658578760894, current=UP, previous=STARTING]
+23 июл. 2022 - 17:19:20.896 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:19:20.920 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 17:19:20.925 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 17:19:20.946 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:19:21.253 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 6.793 seconds (JVM running for 7.684)
+23 июл. 2022 - 17:20:50.255 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23 июл. 2022 - 17:20:50.256 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+23 июл. 2022 - 17:20:50.260 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 4 ms
+23 июл. 2022 - 17:20:50.307 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov, password=12345678, phone=+998330030522)
+23 июл. 2022 - 17:21:46.134 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 17:21:46.134 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658578906134, current=DOWN, previous=UP]
+23 июл. 2022 - 17:21:46.135 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:21:46.139 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:21:46.164 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:21:46.167 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 17:21:46.169 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 17:21:46.170 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
+23 июл. 2022 - 17:21:53.462 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 14616 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 17:21:53.465 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 17:21:54.362 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 17:21:54.424 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 17:21:54.674 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=32c048d5-a57e-3e05-b0da-e418f8568e8f
+23 июл. 2022 - 17:21:55.018 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 17:21:55.027 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 17:21:55.027 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 17:21:55.195 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 17:21:55.195 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1688 ms
+23 июл. 2022 - 17:21:55.320 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 17:21:55.365 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 17:21:55.488 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 17:21:55.567 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 17:21:55.715 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 17:21:55.738 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 17:21:55.855 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 17:21:56.279 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 17:21:56.286 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:21:57.284 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 17:21:57.551 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 17:21:57.603 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 17:21:57.607 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:21:57.638 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 17:21:57.638 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 17:21:57.638 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 17:21:57.638 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 17:21:57.638 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 17:21:57.638 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 17:21:57.638 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 17:21:57.948 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 17:21:57.957 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 17:21:57.965 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 17:21:57.983 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658578917982 with initial instances count: 3
+23 июл. 2022 - 17:21:57.984 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 17:21:57.985 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658578917985, current=UP, previous=STARTING]
+23 июл. 2022 - 17:21:57.986 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:21:58.009 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 17:21:58.010 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 17:21:58.029 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:21:58.328 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 5.451 seconds (JVM running for 6.203)
+23 июл. 2022 - 17:22:39.826 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23 июл. 2022 - 17:22:39.826 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+23 июл. 2022 - 17:22:39.829 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 2 ms
+23 июл. 2022 - 17:22:39.893 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov, password=12345678, phone=+998330030522)
+23 июл. 2022 - 17:22:52.616 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov, password=12345678, phone=+998330030523)
+23 июл. 2022 - 17:23:07.615 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov1, password=12345678, phone=+998330030527)
+23 июл. 2022 - 17:23:19.045 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov1, password=12345678, phone=null)
+23 июл. 2022 - 17:23:30.222 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=null, username=mukhtarov1, password=12345678, phone=null)
+23 июл. 2022 - 17:23:35.326 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=null, username=null, password=12345678, phone=null)
+23 июл. 2022 - 17:23:35.369 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class com.click.dto.profile.ProfileDTO] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]] with root cause
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3635)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2734)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:902)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:794)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:59)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 17:25:39.168 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 17:25:39.168 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658579139168, current=DOWN, previous=UP]
+23 июл. 2022 - 17:25:39.169 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:25:39.174 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:25:39.204 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:25:39.207 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 17:25:39.211 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 17:25:39.211 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
+23 июл. 2022 - 17:25:48.856 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 13864 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 17:25:48.859 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 17:25:49.708 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 17:25:49.761 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 17:25:50.010 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=32c048d5-a57e-3e05-b0da-e418f8568e8f
+23 июл. 2022 - 17:25:50.398 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 17:25:50.405 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 17:25:50.405 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 17:25:50.554 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 17:25:50.555 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1654 ms
+23 июл. 2022 - 17:25:50.679 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 17:25:50.726 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 17:25:50.855 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 17:25:50.936 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 17:25:51.084 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 17:25:51.110 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 17:25:51.228 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 17:25:51.623 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 17:25:51.630 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:25:52.704 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 17:25:52.968 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 17:25:53.028 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 17:25:53.033 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:25:53.062 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 17:25:53.062 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 17:25:53.062 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 17:25:53.062 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 17:25:53.062 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 17:25:53.064 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 17:25:53.064 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 17:25:53.380 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 17:25:53.387 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 17:25:53.394 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 17:25:53.410 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658579153410 with initial instances count: 3
+23 июл. 2022 - 17:25:53.411 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 17:25:53.412 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658579153412, current=UP, previous=STARTING]
+23 июл. 2022 - 17:25:53.414 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:25:53.434 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 17:25:53.434 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 17:25:53.453 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:25:53.734 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 5.448 seconds (JVM running for 6.173)
+23 июл. 2022 - 17:26:41.423 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23 июл. 2022 - 17:26:41.423 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+23 июл. 2022 - 17:26:41.425 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 2 ms
+23 июл. 2022 - 17:26:41.464 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=null, username=null, password=12345678, phone=null)
+23 июл. 2022 - 17:26:41.606 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class com.click.dto.profile.ProfileDTO] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]] with root cause
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3635)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2734)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:902)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:794)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:60)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 17:26:43.104 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=null, username=null, password=12345678, phone=null)
+23 июл. 2022 - 17:26:43.118 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class com.click.dto.profile.ProfileDTO] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]] with root cause
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3635)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2734)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:902)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:794)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:60)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 17:30:53.076 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:32:29.669 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=null, username=null, password=12345678, phone=null)
+23 июл. 2022 - 17:32:29.980 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class com.click.dto.profile.ProfileDTO] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]] with root cause
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3635)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2734)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:902)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:794)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:60)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 17:32:31.522 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=null, username=null, password=12345678, phone=null)
+23 июл. 2022 - 17:32:31.539 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class com.click.dto.profile.ProfileDTO] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]] with root cause
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3635)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2734)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:902)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:794)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:60)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 17:33:32.877 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 17:33:32.877 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658579612877, current=DOWN, previous=UP]
+23 июл. 2022 - 17:33:32.877 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:33:32.882 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:33:32.908 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:33:32.912 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 17:33:32.914 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 17:33:32.916 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
+23 июл. 2022 - 17:34:44.789 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 19284 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 17:34:44.792 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 17:34:45.806 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 17:34:45.865 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 17:34:46.168 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=32c048d5-a57e-3e05-b0da-e418f8568e8f
+23 июл. 2022 - 17:34:46.560 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 17:34:46.568 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 17:34:46.568 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 17:34:46.785 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 17:34:46.785 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1951 ms
+23 июл. 2022 - 17:34:46.926 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 17:34:46.976 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 17:34:47.123 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 17:34:47.240 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 17:34:47.533 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 17:34:47.560 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 17:34:47.689 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 17:34:48.167 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 17:34:48.182 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:34:49.263 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 17:34:49.503 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 17:34:49.551 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 17:34:49.555 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:34:49.585 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 17:34:49.586 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 17:34:49.586 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 17:34:49.586 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 17:34:49.586 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 17:34:49.586 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 17:34:49.586 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 17:34:49.895 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 17:34:49.902 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 17:34:49.909 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 17:34:49.923 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658579689922 with initial instances count: 3
+23 июл. 2022 - 17:34:49.925 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 17:34:49.925 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658579689925, current=UP, previous=STARTING]
+23 июл. 2022 - 17:34:49.927 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:34:49.946 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 17:34:49.948 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 17:34:49.963 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:34:50.260 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 6.135 seconds (JVM running for 6.935)
+23 июл. 2022 - 17:35:30.695 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23 июл. 2022 - 17:35:30.695 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+23 июл. 2022 - 17:35:30.696 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+23 июл. 2022 - 17:35:30.733 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=null, username=null, password=12345678, phone=null)
+23 июл. 2022 - 17:35:30.862 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class com.click.dto.profile.ProfileDTO] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]] with root cause
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Cannot': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 8]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3635)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2734)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:902)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:794)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:105)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.click.service.AuthService.registration(AuthService.java:60)
+	at com.click.controller.AuthController.registration(AuthController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+23 июл. 2022 - 17:35:51.355 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 17:35:51.355 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658579751355, current=DOWN, previous=UP]
+23 июл. 2022 - 17:35:51.356 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:35:51.364 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:35:51.382 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:35:51.384 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 17:35:51.387 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 17:35:51.387 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
+23 июл. 2022 - 17:36:02.444 - c.c.ClickPaymentServiceApplication -  INFO  - Starting ClickPaymentServiceApplication using Java 17.0.1 on DESKTOP-AVEJT3V with PID 2696 (C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service\target\classes started by Admin in C:\Users\Admin\Desktop\Java\micro-service-payment\click-payment-service)
+23 июл. 2022 - 17:36:02.448 - c.c.ClickPaymentServiceApplication -  INFO  - No active profile set, falling back to 1 default profile: "default"
+23 июл. 2022 - 17:36:03.423 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23 июл. 2022 - 17:36:03.524 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interfaces.
+23 июл. 2022 - 17:36:03.815 - o.s.cloud.context.scope.GenericScope -  INFO  - BeanFactory id=32c048d5-a57e-3e05-b0da-e418f8568e8f
+23 июл. 2022 - 17:36:04.226 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8083 (http)
+23 июл. 2022 - 17:36:04.239 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+23 июл. 2022 - 17:36:04.239 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.65]
+23 июл. 2022 - 17:36:04.394 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+23 июл. 2022 - 17:36:04.394 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1879 ms
+23 июл. 2022 - 17:36:04.555 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+23 июл. 2022 - 17:36:04.588 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.10.Final
+23 июл. 2022 - 17:36:04.681 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23 июл. 2022 - 17:36:04.785 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+23 июл. 2022 - 17:36:04.927 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+23 июл. 2022 - 17:36:04.959 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23 июл. 2022 - 17:36:05.093 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+23 июл. 2022 - 17:36:05.543 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23 июл. 2022 - 17:36:05.559 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:36:06.665 - o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -  INFO  - Eureka HTTP Client uses RestTemplate.
+23 июл. 2022 - 17:36:06.944 - o.s.c.n.eureka.InstanceInfoFactory -  INFO  - Setting initial instance status as: STARTING
+23 июл. 2022 - 17:36:07.030 - c.netflix.discovery.DiscoveryClient -  INFO  - Initializing Eureka in region us-east-1
+23 июл. 2022 - 17:36:07.034 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:36:07.064 - c.netflix.discovery.DiscoveryClient -  INFO  - Disable delta property : false
+23 июл. 2022 - 17:36:07.064 - c.netflix.discovery.DiscoveryClient -  INFO  - Single vip registry refresh property : null
+23 июл. 2022 - 17:36:07.064 - c.netflix.discovery.DiscoveryClient -  INFO  - Force full registry fetch : false
+23 июл. 2022 - 17:36:07.064 - c.netflix.discovery.DiscoveryClient -  INFO  - Application is null : false
+23 июл. 2022 - 17:36:07.064 - c.netflix.discovery.DiscoveryClient -  INFO  - Registered Applications size is zero : true
+23 июл. 2022 - 17:36:07.065 - c.netflix.discovery.DiscoveryClient -  INFO  - Application version is -1: true
+23 июл. 2022 - 17:36:07.065 - c.netflix.discovery.DiscoveryClient -  INFO  - Getting all instance registry info from the eureka server
+23 июл. 2022 - 17:36:07.395 - c.netflix.discovery.DiscoveryClient -  INFO  - The response status is 200
+23 июл. 2022 - 17:36:07.403 - c.netflix.discovery.DiscoveryClient -  INFO  - Starting heartbeat executor: renew interval is: 30
+23 июл. 2022 - 17:36:07.411 - c.n.discovery.InstanceInfoReplicator -  INFO  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+23 июл. 2022 - 17:36:07.425 - c.netflix.discovery.DiscoveryClient -  INFO  - Discovery Client initialized at timestamp 1658579767425 with initial instances count: 3
+23 июл. 2022 - 17:36:07.427 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Registering application CLICK with eureka with status UP
+23 июл. 2022 - 17:36:07.428 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658579767428, current=UP, previous=STARTING]
+23 июл. 2022 - 17:36:07.429 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:36:07.449 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8083 (http) with context path ''
+23 июл. 2022 - 17:36:07.450 - o.s.c.n.e.s.EurekaAutoServiceRegistration -  INFO  - Updating port to 8083
+23 июл. 2022 - 17:36:07.491 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:36:07.831 - c.c.ClickPaymentServiceApplication -  INFO  - Started ClickPaymentServiceApplication in 5.987 seconds (JVM running for 7.023)
+23 июл. 2022 - 17:37:07.894 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23 июл. 2022 - 17:37:07.895 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+23 июл. 2022 - 17:37:07.896 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+23 июл. 2022 - 17:37:08.039 - o.s.w.s.m.s.DefaultHandlerExceptionResolver -  WARN  - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.click.controller.AuthController.registration(com.click.dto.profile.RegistrationDTO) with 3 errors: [Field error in object 'registrationDTO' on field 'username': rejected value [null]; codes [NotBlank.registrationDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.username,username]; arguments []; default message [username]]; default message [Surname not null]] [Field error in object 'registrationDTO' on field 'phone': rejected value [null]; codes [NotBlank.registrationDTO.phone,NotBlank.phone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.phone,phone]; arguments []; default message [phone]]; default message [PhoneNumber not null]] [Field error in object 'registrationDTO' on field 'name': rejected value [null]; codes [NotBlank.registrationDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.name,name]; arguments []; default message [name]]; default message [Name not null]] ]
+23 июл. 2022 - 17:37:18.164 - o.s.w.s.m.s.DefaultHandlerExceptionResolver -  WARN  - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.click.controller.AuthController.registration(com.click.dto.profile.RegistrationDTO) with 3 errors: [Field error in object 'registrationDTO' on field 'username': rejected value [null]; codes [NotBlank.registrationDTO.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.username,username]; arguments []; default message [username]]; default message [Surname not null]] [Field error in object 'registrationDTO' on field 'phone': rejected value [null]; codes [NotBlank.registrationDTO.phone,NotBlank.phone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.phone,phone]; arguments []; default message [phone]]; default message [PhoneNumber not null]] [Field error in object 'registrationDTO' on field 'name': rejected value [null]; codes [NotBlank.registrationDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.name,name]; arguments []; default message [name]]; default message [Name not null]] ]
+23 июл. 2022 - 17:37:22.588 - o.s.w.s.m.s.DefaultHandlerExceptionResolver -  WARN  - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.click.controller.AuthController.registration(com.click.dto.profile.RegistrationDTO): [Field error in object 'registrationDTO' on field 'phone': rejected value [null]; codes [NotBlank.registrationDTO.phone,NotBlank.phone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.phone,phone]; arguments []; default message [phone]]; default message [PhoneNumber not null]] ]
+23 июл. 2022 - 17:37:26.419 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov1, password=12345678, phone=+998330030527)
+23 июл. 2022 - 17:37:34.564 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov1_, password=12345678, phone=+998330030527)
+23 июл. 2022 - 17:37:41.032 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov1_, password=12345678, phone=+998330030520)
+23 июл. 2022 - 17:37:57.923 - o.s.w.s.m.s.DefaultHandlerExceptionResolver -  WARN  - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 2]]
+23 июл. 2022 - 17:38:03.135 - o.s.w.s.m.s.DefaultHandlerExceptionResolver -  WARN  - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.click.controller.AuthController.registration(com.click.dto.profile.RegistrationDTO): [Field error in object 'registrationDTO' on field 'phone': rejected value [null]; codes [NotBlank.registrationDTO.phone,NotBlank.phone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registrationDTO.phone,phone]; arguments []; default message [phone]]; default message [PhoneNumber not null]] ]
+23 июл. 2022 - 17:38:07.839 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=mukhtarov1_, password=12345678, phone=+998330030520)
+23 июл. 2022 - 17:38:14.319 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=_mukhtarov1_, password=12345678, phone=+998330030520)
+23 июл. 2022 - 17:38:23.252 - com.click.controller.AuthController -  INFO  - Registration  object = RegistrationDTO(name=Sarvar, username=_mukhtarov1_, password=12345678, phone=+998330030529)
+23 июл. 2022 - 17:41:07.077 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:46:07.091 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:51:07.097 - c.n.d.s.r.aws.ConfigClusterResolver -  INFO  - Resolving eureka endpoints via configuration
+23 июл. 2022 - 17:52:43.877 - o.s.c.n.e.s.EurekaServiceRegistry -  INFO  - Unregistering application CLICK with eureka with status DOWN
+23 июл. 2022 - 17:52:43.877 - c.netflix.discovery.DiscoveryClient -  INFO  - Saw local status change event StatusChangeEvent [timestamp=1658580763877, current=DOWN, previous=UP]
+23 июл. 2022 - 17:52:43.878 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083: registering service...
+23 июл. 2022 - 17:52:43.882 - c.netflix.discovery.DiscoveryClient -  INFO  - DiscoveryClient_CLICK/host.docker.internal:CLICK:8083 - registration status: 204
+23 июл. 2022 - 17:52:43.906 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+23 июл. 2022 - 17:52:43.910 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+23 июл. 2022 - 17:52:43.913 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+23 июл. 2022 - 17:52:43.914 - c.netflix.discovery.DiscoveryClient -  INFO  - Shutting down DiscoveryClient ...
